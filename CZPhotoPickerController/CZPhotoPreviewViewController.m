@@ -26,7 +26,7 @@
 @property(nonatomic,strong) UIImage *image;
 @property(nonatomic,weak) IBOutlet UILabel *previewLabel;
 @property(nonatomic,weak) IBOutlet CZCroppingScrollView *croppingScrollView;
-@property(nonatomic,weak) IBOutlet UIToolbar *toolbar;
+
 
 @end
 
@@ -84,8 +84,8 @@
   [super viewDidLoad];
 
 #if __IPHONE_7_0
-  self.cancelButton.tintColor = [UIColor whiteColor];
-  self.chooseButton.tintColor = [UIColor whiteColor];
+  self.cancelButton.tintColor = self.buttonColor;
+  self.chooseButton.tintColor = self.buttonColor;
   self.previewLabel.hidden = YES;
 #endif
 
@@ -102,7 +102,7 @@
     self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc] initWithTitle:NSLocalizedString(@"Use", nil) style:UIBarButtonItemStyleDone target:self action:@selector(didChoose:)];
   }
   else {
-    self.toolbar.tintColor = [UIColor blackColor];
+      self.toolbar.tintColor = self.buttonColor;
     [self.navigationController setNavigationBarHidden:YES animated:YES];
   }
 

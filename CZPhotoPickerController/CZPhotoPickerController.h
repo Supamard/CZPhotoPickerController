@@ -50,6 +50,11 @@ typedef void (^CZPhotoPickerCompletionBlock)(UIImagePickerController *imagePicke
 @property(nonatomic,assign) BOOL saveToCameraRoll;
 
 /**
+Defaults to whiteColor
+ */
+@property (nonatomic,copy) UIColor *themeColor;
+
+/**
  @param completionBlock Called when a photo has been picked or cancelled (`imageInfoDict` will be nil if canceled). The `UIImagePickerController` has not been dismissed at the time of this being called.
  */
 - (id)initWithPresentingViewController:(UIViewController *)aViewController withCompletionBlock:(CZPhotoPickerCompletionBlock)completionBlock;

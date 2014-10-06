@@ -10,8 +10,6 @@
 		223BA7E517C54B9D0048B378 /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 223BA7E417C54B9D0048B378 /* SenTestingKit.framework */; };
 		223BA7E617C54B9D0048B378 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5C58892616CB3BF900861AA5 /* UIKit.framework */; };
 		223BA7E717C54B9D0048B378 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5C58892816CB3BF900861AA5 /* Foundation.framework */; };
-		223BA7ED17C54B9D0048B378 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 223BA7EB17C54B9D0048B378 /* InfoPlist.strings */; };
-		223BA7F017C54B9D0048B378 /* CZIntegrationTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 223BA7EF17C54B9D0048B378 /* CZIntegrationTests.m */; };
 		4555987D827F480985471787 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E2350730DA7046A1AAB35CDD /* libPods.a */; };
 		5C58892716CB3BF900861AA5 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5C58892616CB3BF900861AA5 /* UIKit.framework */; };
 		5C58892916CB3BF900861AA5 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5C58892816CB3BF900861AA5 /* Foundation.framework */; };
@@ -27,7 +25,6 @@
 		5C58894616CB3BFA00861AA5 /* CZViewController_iPad.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5C58894416CB3BFA00861AA5 /* CZViewController_iPad.xib */; };
 		5C58895616CB3D6800861AA5 /* AssetsLibrary.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5C58895516CB3D6800861AA5 /* AssetsLibrary.framework */; };
 		5C58895816CB3D9000861AA5 /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5C58895716CB3D9000861AA5 /* MobileCoreServices.framework */; };
-		95A462C7B4764B0C92E0A8B5 /* libPods-CZPhotoPickerControllerTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2C8D0044571A4A9EA407E95A /* libPods-CZPhotoPickerControllerTests.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -43,11 +40,6 @@
 /* Begin PBXFileReference section */
 		223BA7E317C54B9D0048B378 /* CZPhotoPickerControllerTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CZPhotoPickerControllerTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
 		223BA7E417C54B9D0048B378 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
-		223BA7EA17C54B9D0048B378 /* CZPhotoPickerControllerTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "CZPhotoPickerControllerTests-Info.plist"; sourceTree = "<group>"; };
-		223BA7EC17C54B9D0048B378 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		223BA7EF17C54B9D0048B378 /* CZIntegrationTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CZIntegrationTests.m; sourceTree = "<group>"; };
-		223BA7F117C54B9D0048B378 /* CZPhotoPickerControllerTests-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "CZPhotoPickerControllerTests-Prefix.pch"; sourceTree = "<group>"; };
-		2C8D0044571A4A9EA407E95A /* libPods-CZPhotoPickerControllerTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-CZPhotoPickerControllerTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		5C58892316CB3BF900861AA5 /* Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5C58892616CB3BF900861AA5 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		5C58892816CB3BF900861AA5 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -80,7 +72,6 @@
 				223BA7E517C54B9D0048B378 /* SenTestingKit.framework in Frameworks */,
 				223BA7E617C54B9D0048B378 /* UIKit.framework in Frameworks */,
 				223BA7E717C54B9D0048B378 /* Foundation.framework in Frameworks */,
-				95A462C7B4764B0C92E0A8B5 /* libPods-CZPhotoPickerControllerTests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -100,30 +91,10 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		223BA7E817C54B9D0048B378 /* CZPhotoPickerControllerTests */ = {
-			isa = PBXGroup;
-			children = (
-				223BA7EF17C54B9D0048B378 /* CZIntegrationTests.m */,
-				223BA7E917C54B9D0048B378 /* Supporting Files */,
-			);
-			path = CZPhotoPickerControllerTests;
-			sourceTree = "<group>";
-		};
-		223BA7E917C54B9D0048B378 /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				223BA7EA17C54B9D0048B378 /* CZPhotoPickerControllerTests-Info.plist */,
-				223BA7EB17C54B9D0048B378 /* InfoPlist.strings */,
-				223BA7F117C54B9D0048B378 /* CZPhotoPickerControllerTests-Prefix.pch */,
-			);
-			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
 		5C58891A16CB3BF900861AA5 = {
 			isa = PBXGroup;
 			children = (
 				5C58892C16CB3BF900861AA5 /* Example */,
-				223BA7E817C54B9D0048B378 /* CZPhotoPickerControllerTests */,
 				5C58892516CB3BF900861AA5 /* Frameworks */,
 				5C58892416CB3BF900861AA5 /* Products */,
 				C997CEC0BC5E409D9E6A5D88 /* Pods.xcconfig */,
@@ -150,7 +121,6 @@
 				5C58892616CB3BF900861AA5 /* UIKit.framework */,
 				E2350730DA7046A1AAB35CDD /* libPods.a */,
 				223BA7E417C54B9D0048B378 /* SenTestingKit.framework */,
-				2C8D0044571A4A9EA407E95A /* libPods-CZPhotoPickerControllerTests.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -205,7 +175,7 @@
 			name = CZPhotoPickerControllerTests;
 			productName = CZPhotoPickerControllerTests;
 			productReference = 223BA7E317C54B9D0048B378 /* CZPhotoPickerControllerTests.octest */;
-			productType = "com.apple.product-type.bundle";
+			productType = "com.apple.product-type.bundle.ocunit-test";
 		};
 		5C58892216CB3BF900861AA5 /* Example */ = {
 			isa = PBXNativeTarget;
@@ -260,7 +230,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				223BA7ED17C54B9D0048B378 /* InfoPlist.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -360,7 +329,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				223BA7F017C54B9D0048B378 /* CZIntegrationTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -385,14 +353,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		223BA7EB17C54B9D0048B378 /* InfoPlist.strings */ = {
-			isa = PBXVariantGroup;
-			children = (
-				223BA7EC17C54B9D0048B378 /* en */,
-			);
-			name = InfoPlist.strings;
-			sourceTree = "<group>";
-		};
 		5C58892F16CB3BF900861AA5 /* InfoPlist.strings */ = {
 			isa = PBXVariantGroup;
 			children = (

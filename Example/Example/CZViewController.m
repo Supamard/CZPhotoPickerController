@@ -29,20 +29,21 @@
 - (CZPhotoPickerController *)photoController
 {
   __weak typeof(self) weakSelf = self;
-
-  return [[CZPhotoPickerController alloc] initWithPresentingViewController:self withCompletionBlock:^(UIImagePickerController *imagePickerController, NSDictionary *imageInfoDict) {
-
-    UIImage *image = imageInfoDict[UIImagePickerControllerEditedImage];
-    if (!image) {
-      image = imageInfoDict[UIImagePickerControllerOriginalImage];
-    }
-
-    weakSelf.imageView.image = image;
-
-    [weakSelf.pickPhotoController dismissAnimated:YES];
-    weakSelf.pickPhotoController = nil;
-
-  }];
+    CZPhotoPickerController *tempPicker = [[CZPhotoPickerController alloc] initWithPresentingViewController:self withCompletionBlock:^(UIImagePickerController *imagePickerController, NSDictionary *imageInfoDict) {
+        
+        UIImage *image = imageInfoDict[UIImagePickerControllerEditedImage];
+        if (!image) {
+            image = imageInfoDict[UIImagePickerControllerOriginalImage];
+        }
+        
+        weakSelf.imageView.image = image;
+        
+        [weakSelf.pickPhotoController dismissAnimated:YES];
+        weakSelf.pickPhotoController = nil;
+        
+    }];
+    tempPicker.themeColor = [UIColor redColor];
+    return tempPicker;
 }
 
 - (IBAction)takePicture:(id)sender

@@ -20,6 +20,9 @@ typedef void (^CZPhotoPreviewChooseBlock)(UIImage *chosenImage);
 
 @interface CZPhotoPreviewViewController : UIViewController
 
+@property(nonatomic,weak) IBOutlet UIToolbar *toolbar;
+
+@property(nonatomic,weak) UIColor *buttonColor;
 /**
  `CZPhotoPreviewViewController` shows an image to the user for review. It should act
  like the preview in Mail.app and Messages.app. It does not support pinch to zoom.
